@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aroma Café — Gallery Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="D:\web design work\website\image\Logo White.png" alt="Aroma Café Logo" class="logo-img" />
+      </a>
+      
+     
+      <nav class="nav">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / BANNER -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Welcome to Aroma Café</h1>
+      <p class="subtitle">Handpicked beans • Homemade snacks • Warm conversations</p>
+      <a href="#gallery" class="btn primary">Explore Gallery</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>About Aroma Café</h2>
+        <p>
+          Aroma Café was born from a love of great coffee and cozy spaces. We source beans
+          responsibly, create seasonal menus, and focus on flavours that bring people together.
+        </p>
+        <ul class="features">
+          <li>Locally sourced ingredients</li>
+          <li>Organic coffee beans</li>
+          <li>Vegan & gluten-free options</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="D:\web design work\website\image\a3bd0f_8aeda69c4a4a46b7ba00e4bbb7c8f881~mv2.jpg" alt="Cafe interior" />
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <h2>Our Menu Gallery</h2>
+      <p class="small-note">Click any image to view larger</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <img src="a3bd0f_8aeda69c4a4a46b7ba00e4bbb7c8f881~mv2.jpg" alt="Breakfast Plate" data-index="0" />
+        <img src="a3bd0f_19dd0b6ff4db4708b7233f6447069477~mv2.jpg" alt="Banana French Toast" data-index="1" />
+        <img src="a3bd0f_83e18dbb5dc54b29b5d05d992692f4cd~mv2.jpg" alt="Seafood Dish" data-index="2" />
+        <img src="a3bd0f_6318a1ab8bb445b6a98ef8babce7916b~mv2.jpg" alt="Pancakes with Berries" data-index="3" />
+        <img src="a3bd0f_23305edda6af4bb2ad56ff82449511f8~mv2.jpg" alt="Eggs with Salad" data-index="4" />
+        <img src="a3bd0f_a924debc476a4297b9f35cd2115e94ac~mv2.jpg"alt="Omelette with Potatoes" data-index="5" />
+        <img src="a3bd0f_bb4bf6b5ac4949eb8bbb5b03990c486c~mv2.jpg" alt="Waffles with Fruits" data-index="6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX / POPUP -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <div class="lb-content">
+      <img id="lbImage" src="" alt="">
+      <div id="lbCaption" class="lb-caption"></div>
+    </div>
+    <button class="lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@aromacafe.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>Address: XYZ Street, Your City</p>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm" novalidate>
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aroma Café · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
